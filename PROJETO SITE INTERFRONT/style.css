@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/*style principal*/
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'inter', sans-serif;
+}
+body {
+    background-color: white;
+
+}
+ 
+section,
+footer {
+   padding: 54px 0;
+   
+   
+}
+
+h3 {
+    font-size: 50px;
+}
+p {
+    color: black;
+    
+     
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+     padding: 0 5%;
+     
+}
+.btn{
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px; 
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.2;
+} 
+.btn:hover{
+    background-color: rgb(61, 51, 50);
+}
+@keyframes animate-outline {
+    from{
+        outline: 0px solid black
+
+    }
+    to{
+        outline: 15px solid  white
+
+    }
+}
+
+header {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed ;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+}
+nav ul a{
+    color: black;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+nav .menu-icon{
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    display: none ;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+}
+.banner .banner-text{ /* franse banner */
+    margin: 150px;
+    text-align: center;
+   padding: 0 98px;
+}
+
+.banner .banner-text h1 {
+    font-size: 50px;
+    color: black;
+}
+.banner .banner-text p { /* franse banner */
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    margin: 18px 0;
+}
+.meu-trabalho .container{
+    display: flex;
+    align-items: center;
+}
+.meu-trabalho .meu-trabalho-text{
+    width: 50%;
+    padding: 0 48px;
+}
+.meu-trabalho .meu-trabalho-text h3{
+    font-size:  56px
+    
+    
+
+} 
+.meu-trabalho-text p{
+    margin: 5px 0 10px 0;
+}
+
+.meu-trabalho-img img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.meu-trabalho-img p{
+    margin: 5px 0 10px 0;
+    text-align: center;
+    
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+footer p {
+    margin: 0;
+    text-align: left;
+    color: #fff;
+    text-align: center;
+  }
+  @media(max-width: 830px){
+    nav .menu-icon{
+       display: block;
+    }
+  }
+
+
+
+
+
