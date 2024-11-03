@@ -1,23 +1,27 @@
 /* style destinos mias populares*/
 body {
-    background-color:rgb(203, 159, 159); /* rosa claro */
+    background-color:white; /* rosa claro */
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
 header {
-    background-color:rgb(0, 0, 0); /* rosa escuro */
+    background-color:rgb(0, 0, 0); 
     color: white;
     text-align: center;
     padding: 20px;
+    position: fixed;
+    width: 100%;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: rgb(203, 159, 159); /* rosa médio */
+    background-color:#ADD8E6;  
     text-align: center;
+    width: 100%;
+    position:fixed;
 }
 
 nav ul li {
@@ -31,14 +35,6 @@ nav ul li a {
     color: white;
 }
 
-nav ul li a:hover {
-    background-color:rgb(203, 159, 159); /* rosa mais escuro no hover */
-}
-
-section {
-    padding: 20px;
-}
-
 footer {
     background-color:rgb(0, 0, 0); /* rosa escuro */
     color: white;
@@ -50,4 +46,59 @@ footer {
 }
 p {
     text-align: center;
+}
+section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+img{
+    height: 640px;
+    width: 1000px;
+}
+.slider-content input{
+    display: none;
+}
+.slide-box{
+    position:center;
+}
+.slide-box img{
+    width: 100%;
+}
+.nav-manual, .nav-auto div{
+    width: 10px;
+    margin-top: 3%;
+}
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid #ADD8E6;
+    padding: 20px;
+    border-radius: 30%;
+    cursor: pointer;
+    transition: 0,2s;
+}
+.nav-manual .manual-btn:not(:last-child),.nav-auto div :not(:last-child){
+    margin-right: 10px;
+}
+.nav-manual .manual-btn:hover{
+    background-color: #030404;
+}
+#radio1:checked ~ .nav-auto .auto-btn1{
+    background-color: #030404;
+}
+#radio2:checked ~ .nav-auto .auto-btn2{
+    background-color: #030404;
+}
+#radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: #030404;
+}
+#radio4:checked ~ .nav-auto .auto-btn4{
+    background-color: #030404;
 }
