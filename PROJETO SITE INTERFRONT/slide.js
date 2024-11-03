@@ -1,16 +1,25 @@
-var radio = document.querySelector('.manual-btn')
-var cont = 1
-document.getElementById('radio1').checked = true
-setInterval(()=>{
-    proximaIMG()
-},5000)
+let currentSlide = 0;
 
-function proximaIMG(){
-    cont++
-
-    if (cont > 4) {
-            cont=1
+function showSlide(index) {
+    const slides = document.querySelectorAll('.carousel-images img');
+    if (index >= slides.length) {
+        currentSlide = 0;
+    } else if (index < 0) {
+        currentSlide = slides.length - 1;
+    } else {
+        currentSlide = index;
     }
 
-    document.getElementById('radio'+cont).checked = true
+    slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+    });
+
+    slides[currentSlide].classList.add('active');
 }
+
+function moveSlide(step) {
+    showSlide(currentSlide + step);
+}
+
+// Inicializa o carrossel mostrando a primeira imagem
+showSlide(currentSlide);

@@ -7,7 +7,7 @@
     <title>INTERFRONT INTERCÂMBIO</title>
     <link rel="stylesheet" href="styledestinosmais.css">
 </head>
-<body style="background-color: white;">
+<body>
     <header>
         <h1>Destinos mais populares</h1>
     </header>
@@ -17,41 +17,17 @@
             <li><a href="index.html">Home</a></li>
         </ul>
     </nav>
-    <section class="slider">
-        <div class="slider-content">
-            <input type="radio" name="btn-radio" id="radio1">
-            <input type="radio" name="btn-radio" id="radio2">
-            <input type="radio" name="btn-radio" id="radio3">
-            <input type="radio" name="btn-radio" id="radio4">
-            <div class="slide-box primeiro">
-                    <img src="img/Eua.jpg" alt="Estados Unidos">
-            </div>
-            <div class="slide-box">
-                    <img src="img/irlanda.jpg" alt="Irlanda">
-            </div>
-            <div class="slide-box">
-                    <img src="img/reino-unido.jpg" alt="Reino Unido">
-            </div>
-            <div class="slide-box">
-                    <img src="img/Malta.jpg" alt="Malta">
-            </div>
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="img/Eua.jpg" alt="Estados Unidos" class="active">
+            <img src="img/irlanda.jpg" alt="Irlanda">
+            <img src="img/reino-unido.jpg" alt="Reino Unido">
+            <img src="img/Malta.jpg" alt="Malta">
         </div>
-
-        <div class="nav-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-            <div class="auto-btn4"></div>
-        </div>
-
-        <div class="nav-manual">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-        </div>
-    </section>
-    
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+      
     <footer>
         <p>&copy;2024 INTERFRONT </p>
     </footer>
