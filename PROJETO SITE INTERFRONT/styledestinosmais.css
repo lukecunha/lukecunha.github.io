@@ -1,23 +1,27 @@
 /* style destinos mias populares*/
 body {
-    background-color:rgb(203, 159, 159); /* rosa claro */
+    background-color:white;
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
 header {
-    background-color:rgb(0, 0, 0); /* rosa escuro */
+    background-color:rgb(0, 0, 0); 
     color: white;
     text-align: center;
     padding: 20px;
+    position: fixed;
+    width: 100%;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: rgb(203, 159, 159); /* rosa médio */
+    background-color:#ADD8E6;  
     text-align: center;
+    width: 100%;
+    position:fixed;
 }
 
 nav ul li {
@@ -31,14 +35,6 @@ nav ul li a {
     color: white;
 }
 
-nav ul li a:hover {
-    background-color:rgb(203, 159, 159); /* rosa mais escuro no hover */
-}
-
-section {
-    padding: 20px;
-}
-
 footer {
     background-color:rgb(0, 0, 0); /* rosa escuro */
     color: white;
@@ -48,6 +44,61 @@ footer {
     bottom: 0;
     width: 100%;
 }
-p {
-    text-align: center;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease; /* Anima a transição */
+}
+
+.carousel-images img {
+    width: 100%; /* Imagens ocupam 100% do contêiner */
+    display: none; /* Esconde todas as imagens inicialmente */
+}
+
+.carousel-images img.active {
+    display: block; /* Exibe apenas a imagem ativa */
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+img{
+    height: 600px;
+    width: max-content;
+}
+.carousel-container {
+    width: 80%; /* Largura do contêiner */
+    max-width: 800px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza o contêiner */
+    border: 2px solid #ccc; /* Opcional: borda para visualização */
+    padding: 10px; /* Opcional: espaço interno */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Opcional: sombra */
+    background-color: #fff; /* Cor de fundo opcional */
 }
